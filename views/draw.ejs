@@ -10,9 +10,20 @@
     <div class="container">
       <div class="draw-section">
         <canvas id="canvas" width="500" height="500"></canvas>
+        <button id="clear-button">Clear</button>
       </div>
     </div>
     <footer class="footer">
       <%- include('./partials/footer'); %>
     </footer>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const context = canvas.getContext('2d');
+      const clearButton = document.getElementById('clear-button');
+      
+      clearButton.addEventListener('click', () => {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      });
+    </script>
   </body>
+</html>

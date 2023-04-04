@@ -1,5 +1,6 @@
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
+const clearButton = document.getElementById('clear-button');
 
 let isDrawing = false;
 let lastX = 0;
@@ -28,4 +29,8 @@ canvas.addEventListener("mouseup", function () {
 
 canvas.addEventListener("mouseout", function () {
   isDrawing = false;
+});
+
+clearButton.addEventListener('click', () => {
+  context.clearRect(0, 0, canvas.width, canvas.height);
 });

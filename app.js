@@ -27,3 +27,7 @@ app.get('/tictactoe', (req, res) => {
 app.get('/rps', (req, res) => {
   res.render('rps')
 })
+
+app.get('/contact', (req, res) => {
+  res.render('contact')
+})
