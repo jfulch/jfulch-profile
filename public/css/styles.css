@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #F6D095;
+}
+
+body {
+  background-color: rgb(252, 217, 154);
+  filter: brightness(120%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-section {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.image-section img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+}
+
+.image-section,
+h1 {
+  display: inline-block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+canvas {
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 2px;
+}
